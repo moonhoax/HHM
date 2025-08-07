@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { ServerClient } from "postmark";
+// Force Git to recognize this file location
 
 // Initialize Postmark client
 const postmarkClient = new ServerClient(process.env.POSTMARK_API_KEY || "");
