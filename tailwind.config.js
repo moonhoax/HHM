@@ -44,6 +44,34 @@ module.exports = {
           to: { "background-position": "200% center" },
         },
       },
+            // <-- Add this part:
+      forms: {
+        input: {
+          borderWidth: "1px",
+          borderColor: "rgb(55 65 81)",  // slate-700
+          backgroundColor: "rgb(4 7 19)", // your custom dark bg
+        },
+        select: {
+          borderWidth: "1px",
+          borderColor: "rgb(55 65 81)",
+          backgroundColor: "rgb(4 7 19)",
+        },
+        textarea: {
+          borderWidth: "1px",
+          borderColor: "rgb(55 65 81)",
+          backgroundColor: "rgb(4 7 19)",
+        },
+        checkbox: {
+          borderWidth: "1px",
+          borderColor: "rgb(55 65 81)",
+          backgroundColor: "rgb(4 7 19)",
+        },
+        radio: {
+          borderWidth: "1px",
+          borderColor: "rgb(55 65 81)",
+          backgroundColor: "rgb(4 7 19)",
+        },
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
