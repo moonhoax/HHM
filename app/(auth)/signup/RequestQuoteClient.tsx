@@ -40,7 +40,7 @@ export default function RequestQuoteClient() {
     }
 
     try {
-      const response = await fetch("/api/send", {
+      const response = await fetch("app/api/send/route.ts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

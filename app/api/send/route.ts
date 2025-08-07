@@ -31,4 +31,9 @@ Service: ${service}
     console.error("Email send error:", error);
     return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
   }
+  export function GET() {
+  return NextResponse.json(
+    { message: "This endpoint only supports POST" },
+    { status: 405 }
+  );
 }
