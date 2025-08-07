@@ -80,3 +80,11 @@
     transform: translate3d(10px, 0, 0) scale(1.2);
   }
 }
+
+
+.form-checkbox, .form-input, .form-multiselect, .form-radio, .form-select, .form-textarea {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(55 65 81 / var(--tw-border-opacity));
+    background-color: rgb(4 7 19);
+}

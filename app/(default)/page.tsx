@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "Hidden Hand",
+  description: "Digital Marketing & Media Agency",
 };
 
 import PageIllustration from "@/components/page-illustration";

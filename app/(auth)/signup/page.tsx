@@ -1,10 +1,10 @@
 "use client";
 
-/*export const metadata = {
+export const metadata = {
   title: "Request A Quote!",
   description:
     "Leave us some information about you and your project and one of our managers will reach out to set up a discovery call with you to discuss service options and pricing.",
-};*/
+};
 
 import Link from "next/link";
 
