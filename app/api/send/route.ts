@@ -4,6 +4,12 @@ import { ServerClient } from "postmark";
 // Initialize Postmark client
 const postmarkClient = new ServerClient(process.env.POSTMARK_API_KEY || "");
 
+// Export GET handler at top level
+export function GET() {
+  return NextResponse.json({ message: "This endpoint only supports POST" }, { status: 405 });
+}
+
+// Export POST handler at top level
 export async function POST(req: NextRequest) {
   const { name, email, service } = await req.json();
 
@@ -31,9 +37,4 @@ Service: ${service}
     console.error("Email send error:", error);
     return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
   }
-  export function GET() {
-  return NextResponse.json(
-    { message: "This endpoint only supports POST" },
-    { status: 405 }
-  );
 }
