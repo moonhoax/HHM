@@ -15,7 +15,7 @@ export default function Header() {
           </div>
 
           {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
+          <ul className="flex flex-1 items-center justify-end gap-3" id="navi">
             {/*<li>
               <Link
                 href="/signin"
