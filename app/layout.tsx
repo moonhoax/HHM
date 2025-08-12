@@ -50,7 +50,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-         {/* Google tag (gtag.js) */}
+      <head>{/* Google tag (gtag.js) */}
       <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17468441866"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
@@ -59,6 +59,7 @@ export default function RootLayout({
 
         gtag('config', 'AW-17468441866');
       </script>
+      </head>
       <body
         className={`${inter.variable} ${nacelle.variable} bg-gray-950 font-inter text-base text-gray-200 antialiased`}
       >
